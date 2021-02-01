@@ -152,9 +152,25 @@ Use the game function below to do the following:
 */
 
 function game(user, computer){
-    if (
-      (user === )
-    )
+  if (
+    (user === 'rock' && computer === 'rock') ||
+    (user === 'paper' && computer === 'paper') ||
+    (user === 'scissors' && computer === 'scissors')
+  ) {
+    return "it's a tie";
+  } else if (
+    (user === 'rock' && computer === 'paper') ||
+    (user === 'paper' && computer === 'scissors') ||
+    (user === 'scissors' && computer === 'rock')
+  ) {
+    return 'you lose!';
+  } else if (
+    (user === 'rock' && computer === 'scissors') ||
+    (user === 'paper' && computer === 'rock') ||
+    (user === 'scissors' && computer === 'paper')
+  ) {
+    return 'you win!';
+  }
 }
   
   

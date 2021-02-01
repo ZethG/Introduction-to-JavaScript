@@ -17,7 +17,8 @@ Do the following:
 
    HINT: no function required
 */
-
+let votingAge = 18;
+console.log(votingAge >= 18);
 
 
 /*
@@ -31,8 +32,16 @@ Do the following:
    HINT: no function required
 */
 
+let varOne = 32;
+let varTwo = 56;
 
+if (varTwo > 50) {
+  varOne = 24;
+} else {
+  varOne += 32;
+}
 
+console.log(varOne);
 
 
 /*
